@@ -1,0 +1,19 @@
+CREATE DATABASE newcompany;
+
+USE newcompany;
+
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    position VARCHAR(100),
+    salary FLOAT
+);
+
+INSERT INTO employees (name, age, position, salary) VALUES
+('Alice', 30, 'Manager', 3500.00),
+('Bob', 25, 'Developer', 2800.50),
+('Charlie', 40, 'Analyst', 4000.00),
+('Diana', 28, 'Designer', 3000.75);
+
+SELECT * FROM employees;
